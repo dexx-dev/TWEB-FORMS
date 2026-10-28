@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Inscrição nos Jogos Escolares</title>
+    </head>
+    <body>
+        <header>
+            <h1>Inscriçao nos Jogos Escolares</h1>
+            Preencha os campos abaixo com suas informações.
+        </header>
+
+        <main>
+            <form id="inscriçao-jogos" action="/inscriçao-jogos" method="post" enctype="multipart/form-data">
+                <label for="nome-atleta">Nome do atleta (obrigatorio)</label>
+                <input type="text" id="nome-atleta" name="nome_atleta" required>
+
+                <label for="email-atleta">Email de contato (obrigatorio)</label>
+                <input tupe="email" id="email-atleta" name="email_atleta" required>
+
+                <label for="equipe">Nome da equipe</label>
+                <input type="text" id="equipe" value="">
+
+                <fieldset>
+                    <legend>Identificação do atleta</legend>
+                <label for="nome-atleta">Nome do atleta (obrigatorio)</label>
+                <input type="text" id="nome-atleta" name="nome_atleta" required>
+
+                <label for="email-atleta">Email de contato (obrigatorio)</label>
+                <input tupe="email" id="email-atleta" name="email_atleta" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Participação nos jogos</legend>
+                   
+                </fieldset>
+                
+                <fieldset> 
+                    <legend>Turno de preferencia</legend>
+                    <input type="radio" id="turno-manha" name="turno" value="manha">
+                    <label for="turno-manha">Manhã</label>
+
+                    <input type="radio" id="turno-tarde" name="turno" value="tarde">
+                    <label for="turno-tarde">Tarde</label>
+
+                    <input type="radio" id="turno-noite" name="turno" value="noite">
+                    <label for="turno-noite">Noite</label>
+
+                 </fieldset>
+
+                 <fieldset>
+                    <legend>Modalidades de interesse</legend>
+                    <input type="checkbox" id="interesse-futsal"
+                    name="modalidades"value="futsal">
+                    <label for="interesse-futsal">Futsal</label>
+
+                    <input type="checkbox" id="interesse-volei"
+                    name="modalidades"value="volei">
+                    <label for="interesse-volei">Vôlei</label>
+
+                    <input type="checkbox" id="interesse-volei"
+                    name="modalidades"value="volei">
+                    <label for="interesse-volei">Voleibol</label>
+                 </fieldset>
+
+
+            </form>
+        </main>
+    </body>
+</html>
