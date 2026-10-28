@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-BR">
     <head>
         <meta charset="utf-8">
@@ -20,7 +20,7 @@
                 <input tupe="email" id="email-atleta" name="email_atleta" required>
 
                 <label for="equipe">Nome da equipe</label>
-                <input type="text" id="equipe" value="Equipe Horizonte">
+                <input type="text" id="equipe" value="">
 
                 <fieldset>
                     <legend>Identificação do atleta</legend>
@@ -35,7 +35,36 @@
                     <legend>Participação nos jogos</legend>
                    
                 </fieldset>
- 
+                
+                <fieldset> 
+                    <legend>Turno de preferencia</legend>
+                    <input type="radio" id="turno-manha" name="turno" value="manha">
+                    <label for="turno-manha">Manhã</label>
+
+                    <input type="radio" id="turno-tarde" name="turno" value="tarde">
+                    <label for="turno-tarde">Tarde</label>
+
+                    <input type="radio" id="turno-noite" name="turno" value="noite">
+                    <label for="turno-noite">Noite</label>
+
+                 </fieldset>
+
+                 <fieldset>
+                    <legend>Modalidades de interesse</legend>
+                    <input type="checkbox" id="interesse-futsal"
+                    name="modalidades"value="futsal">
+                    <label for="interesse-futsal">Futsal</label>
+
+                    <input type="checkbox" id="interesse-volei"
+                    name="modalidades"value="volei">
+                    <label for="interesse-volei">Vôlei</label>
+
+                    <input type="checkbox" id="interesse-volei"
+                    name="modalidades"value="volei">
+                    <label for="interesse-volei">Voleibol</label>
+                 </fieldset>
+
+
             </form>
         </main>
     </body>
